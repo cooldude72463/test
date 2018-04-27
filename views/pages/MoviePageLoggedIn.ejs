@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <% include ../partials/head %>
+    <title>Movie Page</title>
+    <link rel="stylesheet" href="/CSS/form.css">
+
+</head>
+<header>
+    <% include ../partials/headerLoggedIn %>
+</header>
+
+<body onload="showMovieOnMoviePage()">
+
+    <main>
+
+        <div id = "searchResults">
+
+        </div>
+
+        <div id = "createReview">
+            <h2>Create Review</h2>
+            <form method="post" action="/addMovie">
+                <textarea type="text" id "movieReviewTextArea" name="movieReview" rows="8" cols="100"></textarea>
+                <input type="submit" value="X" id="submit">
+            </form>
+        </div>
+
+        <h2>Reviews</h2>
+        <div id = "movieReviews">
+            <% array.forEach(function(info) { %>
+                <div> <%= info.Username %> </div>
+                <div> <%= info.Review %> </div>
+            <% }); %>
+        </div>
+
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+
+</html>

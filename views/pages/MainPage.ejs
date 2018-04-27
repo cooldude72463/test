@@ -1,0 +1,69 @@
+<html>
+
+  <head>
+
+    <% include ../partials/head %>
+
+    <title id="Title">Movie Review Hub</title>
+
+  </head>
+
+  <body onload="Content()">
+
+      <header>
+
+        <% include ../partials/header %>
+
+      </header>
+
+      <main>
+
+        <div class="parent">
+          <div class="child">
+            <section class="boxes" id="leftbox">
+              <h2>Newest Additions</h2>
+              <div class="threshold"> <!-- image threshold -->
+                <div id = "NewestAddition">
+
+                </div>
+              </div>
+              <button id="seemore">See more...</button>
+            </section>
+          </div>
+
+          <div class="child">
+            <section class="boxes" id="midbox">
+              <h2>Least Popular</h2>
+              <div class="threshold"> <!-- image threshold -->
+                <div id = "LeastPopular">
+
+                </div>
+              </div>
+              <button id="seemore">See more...</button>
+            </section>
+          </div>
+
+          <div class="child">
+            <section class="boxes" id="rightbox">
+              <h2>Lowest Rated</h2>
+              <div class="threshold"> <!-- image threshold -->
+                <div id = "LowestRated">
+
+                </div>
+              </div>
+              <button id="seemore">See more...</button>
+            </section>
+          </div>
+        </div>
+
+
+
+      </main>
+
+      <footer>
+        <% include ../partials/footer %>
+      </footer>
+
+  </body>
+
+</html>

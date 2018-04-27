@@ -1,0 +1,62 @@
+
+  <div id="bannerZone">
+    <img src="/Images/water.gif" id="banner" alt="This will display an animated GIF" />
+  </div>
+
+  <div id="websiteTitle"> <!--Website Title-->
+    <h1>Agonizing Flicks</h1>
+  </div>
+
+  <div id="menubar"> <!-- holds the menubar -->
+    <nav> <!--Login and Logout Menubar-->
+      <ul>
+          <li><button onclick="document.getElementById('id02').style.display='block'"><%= user.login.username %></button></li>
+        </ul>
+    </nav>
+  </div>
+
+  <!-- <div id="searchbar">
+    <form name="search" method="get" onsubmit="return validate()" action="/SearchPage" id="searchform">
+      <input type="text" name = "q" id="searchbox" size="40">
+      <input type="submit" value="X" id="submit">
+    </form>
+  </div> -->
+
+
+  <!-- <div > -->
+    <div class="webdesigntuts-workshop" id="searchbar">
+      <form name="search" method="get" onsubmit="return validate()" action="/SearchPage" id="searchform">
+        <input type="search" name = "q" id="searchbox">
+
+      <!--<input type="submit" value="X" id="submit">-->
+      </form>
+    </div>
+  <!-- </div> -->
+
+
+  <div id="id02" class="modal">
+
+    <form class="modal-content animate" action="/LogOut" method="POST">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="">&times;</span>
+        <img src="/Images/AccountManagementImage.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <button type="submit" style="background-color:#336699">Logout</button>
+      </div>
+
+      <div class="container" style="background-color:#336699">
+        <!--<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
+        <!--<span class="psw">Forgot <a href="#">password?</a></span> -->
+      </div>
+    </form>
+  </div>
+
+
+      <div class="container" style="background-color:#336699">
+        <!--<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
+        <!--<span class="psw">Forgot <a href="#">password?</a></span> -->
+      </div>
+    </form>
+  </div>

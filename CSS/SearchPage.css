@@ -1,0 +1,57 @@
+#test{
+  height: 150px;
+  display:flex;
+  flex-flow:nowrap;
+  float: left;
+}
+
+.image{
+  width: 92px;
+}
+
+#searchResults{
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+@import "compass/css3";
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+
+  line-height: 25px;
+  color: white;
+  font-weight: bold;
+  /*font-size: 3em;*/
+  text-align: center;
+}
+
+.title{
+  width: auto;
+  height: 100px;
+}
+
+.poster{
+  height: 140px;
+}
