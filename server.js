@@ -24,7 +24,7 @@ MongoClient.connect(url, function(err, database) {
     console.log('listening on 8080');
 });
 
-app.get('/', function(req, res) {
+app.get('https://foulflicks.azurewebsites.net/', function(req, res) {
     if(req.session.loggedin){
         db.collection('UserInfo').findOne({"login.username":username}, function(err, result) {
             //console.log("logged in");
